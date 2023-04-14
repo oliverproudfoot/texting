@@ -13,7 +13,7 @@ def send_message(recipient_number, message):
     """
     Send a message using AppleScript.
     """
-    os.system("osascript sendMessage.applescript {} {}".format(recipient_number, message))
+    os.system('osascript sendMessage.applescript {} "{}"'.format(recipient_number, message))
 
 def main():
     # Add argparse functionality
